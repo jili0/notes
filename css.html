@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmieren Lernen</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Programmieren Lernen</h1>
+      <p class="headerText">
+        <span class="verticalText">Das</span> Notizbuch
+        <span class="notizZettelName">CSS</span>
+      </p>
+      <nav aria-label="headerNav" class="headerNav">
+        <ul>
+          <a href="/"><li>Homepage</li></a>
+          <a href="html.html"><li>HTML</li></a>
+          <a href="css.html"><li class="selected">CSS</li></a>
+          <a href="js.html"><li>JS</li></a>
+          <a href="react.html"><li>React</li></a>
+          <a href="shortcuts.html"><li>Shortcuts</li></a>
+          <a href="terminal.html"><li>Terminal</li></a>
+          <a href="tools.html"><li>Tools</li></a>
+          <a href="problems.html"><li>Problems</li></a>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <nav aria-label="asideNav" class="asideNav">
+        <ul>
+          <a href="/"><li>Homepage</li></a>
+          <a href="html.html"><li>HTML</li></a>
+          <a href="css.html"><li class="selected">CSS</li></a>
+          <a href="js.html"><li>JS</li></a>
+          <a href="react.html"><li>React</li></a>
+          <a href="shortcuts.html"><li>Shortcuts</li></a>
+          <a href="terminal.html"><li>Terminal</li></a>
+          <a href="tools.html"><li>Tools</li></a>
+          <a href="problems.html"><li>Problems</li></a>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <div class="notizContainerCSS"></div>
+      <form class="neueNotizForm">
+        <label for="neueNotiz">Add neue HTML-Notiz</label>
+        <textarea
+          name="neueNotiz"
+          id="neueNotiz"
+          class="neueNotiz"
+          cols="30"
+          rows="5"
+          placeholder="Add neue HTML Notiz"
+        ></textarea>
+        <button type="submit" class="submitNeueNotiz">Submit</button>
+      </form>
+    </main>
+    <footer>
+      <nav aria-label="footerNav" class="footerNav">
+        <ul>
+          <li><a href="about.html" class="footerText">About</a></li>
+          <li><a href="contact.html" class="footerText">Kontakt</a></li>
+          <p class="footerText">Copyright Jing Li</p>
+        </ul>
+      </nav>
+    </footer>
+    <script src="./notizDaten/css.js" defer></script>
+    <script src="script.js" defer type="module"></script>
+  </body>
+</html>

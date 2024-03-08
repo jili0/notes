@@ -1,0 +1,50 @@
+let cssNotizen = `
+- hsl: hue, saturation, lightness
+- p {width: 40ch;} ch: characters
+- text-indent: 2en; add indent to the paragraph
+- oblique is a stronger italic
+- a:visited 
+- a:hover and a:focus
+- a:active(by mousing down)(the order of those 3 is important!)
+- ol {list-style-type: lower-alpha; list-style-position: inside; list-style-image: url("");}
+- shortcut: list-style: square url('') inside; (square is a backup for img)
+- ::marker
+- <li value="5"></li> value defines the order of the current list item
+- float: left; floats an image/div to the left and the text will wrap around it
+- clear: left;
+- display: flow-root; makes the container of the float element resize according to the float element
+- column-count: 4;
+- column-width: 250px;
+- shortcut: columns: 4 250px;
+- column-rule: 2px solid black;
+- white-space: nowrap; the text won't be broken by shrinking the page
+- break-inside: avoid; avoid that a part of the bottom padding splitts off and appears on the top of next column
+- break-before: column; make element appears on the top of the next column (not recommended by shrinking the page to small width)
+- column-span: all; span sth accross all the columns
+- html {scroll-behavior: smooth;}
+- shorthand: flex-flow: row wrap;
+- flex-basis: 100px; (works like a min-width, but allows item to shrink)
+- shorthand: flex: 1 2 250px; (grow, shrink, basis)
+- order: -1; (put the flex item at the start)
+- order: 0; (default)
+- order: 1; (put the flex item at the end)
+- grid-auto-flow: row;
+- grid-template-columns: repeat(4, 1fr);
+- grid-auto-rows: minmax(100px, auto);
+- grid-column-start: 1; grid-column-end: 4; (stretches a grid item accross 3 columns)
+- shorthand: grid-column: 1/4; (the same with grid row)
+- place-content: center center; (a shorthand for align-items and justify-content)
+- grid-template-area: { "hd hd hd hd hd" "mn mn mn mn sb" "ft ft ft ft ft";}
+- grid-area: ft;
+- background-img: url("");
+- background-repeat: no-repeat/repeat-x/repeat-y;
+- background-size: cover; set the background to the center of an img
+- text-shadow: 2px 2px 5px black; (x, y, blur, color)
+- background-position: top right;
+- background-img: url() linear-gradient();
+- background-size
+- -webkit-background-clip: text; color: transparent; clip the background img to the foreground text
+- -webkit- is a prefix for chrome, we can add another line of the same code without this prefix as a fallback, so that Firefox can support it, too
+- scroll-margin-top: 8rem;
+- border-collapse: collapse/ separated; sets whether table borders should be a single border or be separated (default);
+`;

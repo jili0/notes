@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Programmieren Lernen</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Programmieren Lernen</h1>
+      <p class="headerText"><span class="verticalText">Das</span> Notizbuch</p>
+      <nav aria-label="headerNav" class="headerNav">
+        <ul>
+          <a href="/"><li>Homepage</li></a>
+          <a href="html.html"><li>HTML</li></a>
+          <a href="css.html"><li>CSS</li></a>
+          <a href="js.html"><li>JS</li></a>
+          <a href="react.html"><li>React</li></a>
+          <a href="shortcuts.html"><li>Shortcuts</li></a>
+          <a href="terminal.html"><li>Terminal</li></a>
+          <a href="tools.html"><li>Tools</li></a>
+          <a href="problems.html"><li>Problems</li></a>
+        </ul>
+      </nav>
+    </header>
+    <aside>
+      <nav aria-label="asideNav" class="asideNav">
+        <ul>
+          <a href="/"><li>Homepage</li></a>
+          <a href="html.html"><li>HTML</li></a>
+          <a href="css.html"><li>CSS</li></a>
+          <a href="js.html"><li>JS</li></a>
+          <a href="react.html"><li>React</li></a>
+          <a href="shortcuts.html"><li>Shortcuts</li></a>
+          <a href="terminal.html"><li>Terminal</li></a>
+          <a href="tools.html"><li>Tools</li></a>
+          <a href="problems.html"><li>Problems</li></a>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <form action="">
+        <label for="neueNotiz">Add neue Notiz</label>
+        <textarea
+          name="neueNotiz"
+          id="neueNotiz"
+          class="neueNotiz"
+          cols="30"
+          rows="5"
+          placeholder="Neue Notiz"
+        ></textarea>
+        <div class="submitPanel">
+          <label for="notizZettel" class="notizZettelLabel">Notizzettel:</label>
+          <select name="notizZettel" id="notizZettel" class="notizZettel">
+            <option value="HTML">HTML</option>
+            <option value="CSS">CSS</option>
+            <option value="JS">JS</option>
+            <option value="React">React</option>
+            <option value="Shortcuts">Shortcuts</option>
+            <option value="Terminal">Terminal</option>
+            <option value="Tools">Tools</option>
+            <option value="Problems">Problems</option>
+            <option value="Anderes">Anderes</option>
+          </select>
+
+          <button type="submit" class="submitButton">Submit</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <nav aria-label="footerNav" class="footerNav">
+        <ul>
+          <li><a href="about.html" class="footerText">About</a></li>
+          <li><a href="contact.html" class="footerText selected">Kontakt</a></li>
+          <p class="footerText">Copyright Jing Li</p>
+        </ul>
+      </nav>
+    </footer>
+  </body>
+</html>

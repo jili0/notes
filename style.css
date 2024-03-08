@@ -1,0 +1,312 @@
+/* RESET */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #000;
+  color: rgb(206, 183, 183);
+  font-family: monospace, sans-serif;
+  font-size: min(4.5vh, 35px);
+}
+
+a:any-link {
+  text-decoration: none;
+}
+
+/* Allgemein */
+
+body {
+  width: 90%;
+  max-width: 1200px;
+  min-height: 100vh;
+  margin-inline: auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 2vh;
+  z-index: 100;
+  text-align: center;
+}
+
+h1 {
+  font-size: min(6.5vh, 55px);
+  padding: 2vh;
+}
+
+span {
+  font: inherit;
+}
+
+nav ul li::marker {
+  content: none;
+}
+
+aside {
+  position: sticky;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  padding: 2vh;
+}
+
+label {
+  position: absolute;
+  left: -99999px;
+}
+
+form {
+  flex-grow: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+  margin-top: 2vh;
+  border: 1px solid #777;
+  border-radius: 1vh;
+}
+
+textarea {
+  width: 100%;
+  flex-grow: 3;
+  padding: 2vh;
+}
+
+textarea:focus {
+  background-color: rgb(206, 183, 183);
+  color: #000;
+}
+
+textarea::selection {
+  background-color: #000;
+  color: rgb(206, 183, 183);
+}
+
+button {
+  padding: 0 2vh;
+}
+
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 5vh;
+}
+
+/* Utilities */
+
+.verticalText {
+  writing-mode: vertical-rl;
+}
+
+.selected {
+  color: #000;
+  background-color: rgb(206, 183, 183);
+}
+
+/* Spezifik  */
+
+.headerText {
+  font-size: min(3.5vh, 25px);
+}
+
+.headerNav {
+  display: none;
+  padding-top: 2vh;
+}
+
+.headerNav ul,
+.footerNav ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.headerNav ul {
+  justify-content: space-evenly;
+}
+
+.headerNav ul li {
+  padding-inline: 2vh;
+}
+
+.headerNav ul li:hover,
+.asideNav ul li:hover,
+.submitButton:hover {
+  color: #000;
+  background-color: rgb(206, 183, 183);
+}
+
+.footerNav ul {
+  justify-content: center;
+  gap: 2vh;
+}
+
+.footerText:not(:hover) {
+  color: #333;
+}
+
+.footerNav ul li::after {
+  content: " 🐶 ";
+}
+
+.footerNav ul li:nth-last-child(1)::after {
+  content: "";
+}
+
+.submitPanel {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 2vh;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.notizZettelLabel {
+  position: static;
+  margin-top: 2vh;
+  flex-shrink: 3;
+}
+
+.notizZettel {
+  flex-grow: 3;
+  flex-shrink: 2;
+}
+
+.submitButton {
+  flex-grow: 1;
+  flex-shrink: 1;
+}
+
+@media only screen and (max-width: 800px) {
+  .headerNav {
+    display: flex;
+  }
+
+  header {
+    height: 35vh;
+  }
+  aside {
+    display: none;
+  }
+
+  main {
+    height: 60vh;
+    margin-block: 35vh;
+  }
+}
+
+@media only screen and (min-width: 801px) {
+  .headerNav {
+    display: none;
+  }
+
+  header {
+    height: 20vh;
+  }
+  aside {
+    display: flex;
+    width: 20vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    padding-top: 20vh;
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+    z-index: 99;
+  }
+
+  .asideNav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 100%;
+  }
+
+  main {
+    margin-block: 20vh;
+    width: calc(100% - 20vw);
+    position: relative;
+    left: 20vw;
+  }
+}
+
+/* HTML.html */
+
+.neueNotizForm {
+  display: flex;
+  flex-direction: row;
+  height: 20vh;
+  flex-grow: 0;
+  gap: 2vh;
+  margin-bottom: 30vh;
+}
+
+.neueNotiz {
+  flex-grow: 3;
+}
+
+.submitNeueNotiz {
+  flex-grow: 1;
+}
+
+.innerContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border-bottom: 1px solid white;
+  padding-block: 2vh;
+}
+
+.editDeleteButtons {
+  flex-grow: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: 2vh;
+}
+
+.einzelnNotiz {
+  flex-grow: 1;
+}
+
+.editButton,
+.deleteButton {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.editButton:hover,
+.deleteButton:hover {
+  opacity: 0.8;
+}
+
+.editButton:active,
+.deleteButton:active {
+  opacity: 0.6;
+}

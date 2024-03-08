@@ -1,0 +1,4 @@
+- try not to use id selectors in css, but class selector
+- use const as default
+- bei Funktionen lokale statt globale Variable zu benutzen
+- APIs help us connect frontend to backend
