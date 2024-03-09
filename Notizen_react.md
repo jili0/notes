@@ -43,3 +43,53 @@
   App.js: const {width, height} = useWindowSize()
 - React Router___________________________________
 - npm i react-router-dom -S
+- import {BrowserRouter, Routes, Route, Limk(or NavLink),useParams, useHistory, Outlet} from 'teact-touter-dom'
+- const (id) = useParams()
+- const post = posts.find(post => (post.id).toString() === id)
+- useHistory(): use browser history
+- const history = useHistory()
+- history.push('/'): use inside handleDelete, take us back to the homepage
+- date-fns_____________________________________
+- npm i date-fns -S
+- import {format} from 'date-fns'
+- const datetime = format(new Date(), 'MMMM dd, yyyy pp')
+- createContext______________________________________
+- context (›››darkmode) stop drilling props all the way down
+- src/context/DataContext.js
+- import {createContext, useState, useEffect} from 'react'
+- const DataContext = createContext({})
+- export const DataProvider = ({children}) => {
+    return (
+      <DataContext.Provider value = {{width, height, ...}}>
+        {children}
+      </DataContext.Provider>
+    )
+  } 
+- App,js: import {DataProvider} from './context/DataContext'
+  <DataProvider>
+    <Route ...> ...
+  </DataProvider>
+- Header.js: import {useContext} from 'react'; import DataContext from './context/DataContext'
+- const Header = () => {
+    const {width} = useContext(DataContext)
+  }
+- JSON Server ________________________________________
+- npx json-server -p 3500 -w date/db.json
+  (not install as dependency but just work with it, so npx instead of npm)
+- request types: get/post/patch(means update)/delete
+- const [fetchErr, setFetchErr] = useState(null)
+- useEffect(() => {
+    const fetchItems = async () => {
+      try {
+        const res = await fetch(API_URL)
+        if (!res.ok) throw Error ('Did not receive data')
+        const listItems = await res.json()
+        setItems(listItems)
+        setFetchErr(null)
+      } catch (err) {
+        setFetchError(err.message)
+      } finally {
+        setIsLoading(false)
+      }
+    }
+  })
