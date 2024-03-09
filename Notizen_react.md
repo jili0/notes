@@ -92,4 +92,54 @@
         setIsLoading(false)
       }
     }
-  })
+    fetchItems()
+  }, [])
+- const postOptions = {
+    method: 'POST',
+    headers: {'content-type': 'application/json'},
+    body: JSON.stringify(myNewItem)
+  }
+  const result = await apiRequest(API_URL, postOptions)
+- axios ______________________________________________
+- npm i axios -S
+- npmjs.com/package/axios
+- src/api/posts.js: import {axios} from 'axios'
+- export default axios.create({ baseURL: 'http://localhost:3500'})
+- npx json-server -p 3500 -w date/db.json (launch json-server instance)
+- App.js: import api from './api/post'
+- useEffect(() => {
+    const fetchPosts = async () => {
+      try {
+        const res = await api.get('/posts')
+        //axios automatically catch errors, so no need to if (!res.ok)..
+        setPosts(res.data)
+        //axios automatically create that json, so no need to define data 
+      } catch (err) {
+        if (err.response) {
+          console.log(err.response.data)
+        } else {
+          console.log(err.message)
+        }
+      }
+    }
+    fetchPosts()
+  }, [])
+- handleSubmit: 
+  const response = await api.post('/posts', newPost)
+  //newPost is response.data. Use this to update the state
+- handleDelete:
+  await api.post('/post/${id}')
+- handleEdit = async () => {
+    const updatedPost = {...}
+    try {
+      const response = await api.put('/post/${id}', updatedPost)
+      //while 'put' replaces all fields, 'patch' only updates certain fields
+      setPosts(posts.map(post => post.id === id ? {...response.data} : post))
+      setEditTitle('')
+      setEditBody('')
+      history.push('/)
+    } catch (err) {console.log(err.message)}
+  }
+  - react-icons________________________________________________
+  - npm i react-icons
+  - import { Falaptop, FaTableAlt, FaMobileAlt} from 'react-icons/fa'
