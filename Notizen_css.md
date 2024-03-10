@@ -41,6 +41,7 @@ Notizen_css
 - background-repeat: no-repeat/repeat-x/repeat-y;
 - background-size: cover; set the background to the center of an img
 - text-shadow: 2px 2px 5px black; (x, y, blur, color)
+- box-shadow: 2px 2px 5px -5px black; (x, y, blur, spread, color)
 - background-position: top right;
 - background-img: url() linear-gradient();
 - background-size
@@ -48,3 +49,63 @@ Notizen_css
 - -webkit- is a prefix for chrome, we can add another line of the same code without this prefix as a fallback, so that Firefox can support it, too
 - scroll-margin-top: 8rem;
 - border-collapse: collapse/ separated; sets whether table borders should be a single border or be separated (default);
+- @media (prefers-color-scheme: dark) {
+    :root {
+
+    }
+  }
+  prefers-color-scheme: dark››› depends on which preference your computer have
+- Methodology BEM: Block Element Modifier. Is a component-based approach to web development. The idea behind it is to divide the user interface into independent blocks. This makes interface development easy and fast even with a complex UI, and it allows reuse of existing code without copying and pasting
+- modifiers: provide incremental changes to our more important semantic blocks.
+- .btn--secondary {background: yellow;} ››› two dashes indicates a modifier
+- <button class= "header__bth--secondary"> ››› two underscores indicate that item are dependent on the header(the major component)
+- Reset:________________________________________
+  *,
+  *::after,
+  *::before {margin: 0; padding: 0; box-sizing: border-box;}
+  img {display: block; max-width: 100%; height: auto;}
+  input, button, textarea, select {font: inherit;}
+- variables________________________________________
+  :root {
+    /*FONTS*/
+    /*COLORS*/
+    /*BORDERS*/
+  }
+- utility classes _____________________________________________
+  .offscreen {position: absolute; left: -9999px;}
+  .nowrap {white-space: nowrap;}
+  .center {text-align: center;}
+- /*GENERAL STYLES*/
+  /*||HEADER*/
+- @keyframes showWelcome {
+    0% {
+      top: -20px;
+      transform: skew(0deg, -5deg) scaleY(0);
+    }
+    80% {
+      top: 30px;
+      transform: skew(10deg, -5deg) scaleY(1.2);
+    }
+    100% {
+      top: 20px;
+      transform: skew(-10deg, -5deg) scaleY(1);
+    }
+  }
+- .hero__h2 {
+    animation: showWelcome 0.5s ease-in-out 1s forwards;
+  } ››› forwards: keep the state as the animation ends
+- .main__article {
+    scroll-margin-top: 6.5rem;
+  }
+
+  .main__article: last-child {
+    min-height: calc(100vh - 20rem); ››› gives the page just a little extra room to scroll
+  }
+- display: contents; ››› causes an element's children to appear as if they were direct children of the element's parent, ignoring the element itself. used to parent elements for css grid.
+- dark Mode: ________________________________
+- @media (prefers-color-scheme: dark) {
+    :root {
+      --BGCOLOR: #000;
+      ...
+    }
+  }

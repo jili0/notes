@@ -1,3 +1,4 @@
+let tipsNotizen = `
 - try not to use id selectors in css, but class selector
 - use const as default
 - bei Funktionen lokale statt globale Variable zu benutzen
@@ -12,3 +13,4 @@
 - dont't forget to style the width of the root div
 - define the functions and states first within App.js, then move to DataContext, then move to separate Components if they can
 - var is function scope, not block scope. avoid using var!
+`;

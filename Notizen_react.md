@@ -183,4 +183,3 @@
 - npm i colornames -S
 - import colorNames from 'colornames'
 - colorNames(red)
-- 

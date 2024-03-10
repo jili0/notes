@@ -1,19 +1,12 @@
 let htmlNotizen = `
-- <fieldset>
-    <legend></legend>
-    <input type="text">
-    <label for=""></label>
-    <input type="text">
-    <label for=""></label>
-  </fieldset>
-  
 - <a href="#"></a>: back to the top of the page
 - <a href="" download></a>: create a download link
 - <a href="tel: 55555555"></a>
 - <a href="" target="_blank"></a> the link will be opened in a new tab
-- <a href="/"></a>: back to the homepage
+- <a href="/"></a>: back to the homepage. / means it'll be the root page
 - <nav aria-label="primary-navigation"></nav>: if you have more than one nav, it is important to label them
 - <nav aria-labelledby=""></nav>: points to an id of for example an h1 element. Labelledby can not stand alone without a refered-to id. The aria-labelledby attribute identifies the element (or elements) that labels the element it is applied to. The aria-labelledby attribute identifies the element (or elements) that labels the element it is applied to.
+
 - <form action="" method="get/post"></form>
 - <input type="password/tel/text">
 - <input name="">: name attribute identifies the element at a server level
@@ -105,5 +98,4 @@ let htmlNotizen = `
 
 - You can wrap input and its label in an p element to make them appear on one seperate line
 - Don't send sensitive information using get request, since everything that you send shows in the urls
-
-  `;
+`;

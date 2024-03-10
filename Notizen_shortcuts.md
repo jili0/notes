@@ -56,10 +56,13 @@
   Shift Opt A
 - 5 paragraphs with 20 words:
   p*5>lorem20
+- div.square*12 ››› Tab
 - wrap the code:
   Opt Z
 - cmd shift p: 
   open emmet
+- cmd shift L : select all occurences
 
 - creates an inputfield with the type set to text
-  input:text 
+  input:text
+- shift plus mouseclick: select page content 
