@@ -140,6 +140,47 @@
       history.push('/)
     } catch (err) {console.log(err.message)}
   }
-  - react-icons________________________________________________
-  - npm i react-icons
-  - import { Falaptop, FaTableAlt, FaMobileAlt} from 'react-icons/fa'
+- react-icons________________________________________________
+- npm i react-icons
+- import { Falaptop, FaTableAlt, FaMobileAlt} from 'react-icons/fa'
+- easy-peasy Redux________________________________________
+- npm i easy-peasy
+- src/store.js: 
+  import {createStore, action, thunk, computed} from 'easy-peasy'; import api from './api/posts'
+- export default createStore({
+    posts: [],
+    setPosts: action((state, payload) => {state.posts = payload}),
+    postCount: computed((state) => {state.posts.length}),
+    getPostById: computed((state) => {return id => state.posts.find(post.id).toString() === id}),
+    savePost: thunk(async(actions, newPost, helpers) => {
+      const {post} = helpers.getState()
+      try {
+        const response = await api.post('/post', newPost)
+        actions.setPosts([...Posts, response.data])
+        actions.setPostTitle('')
+        actions.setPostBody('')
+      } catch (err) {
+        console.log(err.message)
+      }
+    })
+  })
+- index.js: 
+  import {StoreProvider} from 'easy-peasy'
+  import store from './store'
+  <StoreProvider store = {store}>
+    <Routes>
+      <Route ... element = {<App />}>
+  </StoreProvider>
+- vite _______________________________
+- npm create vite@latest
+- Bootstrap ___________________________
+- npm i bootstrap@latest
+- main.jsx: import 'bootstrap/dist/css/bootstrap.css'
+- styled components______________________________
+- npm install --save styled-components
+- styled-components.com
+- colornames: translate color name into hex value_______________
+- npm i colornames -S
+- import colorNames from 'colornames'
+- colorNames(red)
+- 
