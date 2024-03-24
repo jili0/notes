@@ -1,3 +1,58 @@
+- shortcuts_ubuntu_________________________________
+- 
+- app im Dock öffnen:
+  Cmd (Shift) NumberOfTheApp 
+- Fenster wechseln:
+  Cmd rechts
+- in den Papierkorb:
+  Fn Rückschritt
+
+- Bildschirmaufname:
+  Ctrl Cmd B
+- Fenster zu anderem Bildschirm verschieben:
+  Ctrl Cmd links/rechts
+- Fenster maximieren:
+  Ctrl Cmd +
+- Fenster minimieren:
+  Ctrl Cmd -
+- Fenster Horizontal/Vertikal maximieren:
+  Ctrl Cmd H/V
+- Fenster verschieben:
+  Ctrl Cmd Y
+- Fenster schließen:
+  Ctrl Cmd X
+- Desktop zeigen:
+  Ctrl Cmd D
+- Terminal:
+  Ctrl Cmd T
+- Suchen:
+  Ctrl Cmd F
+- Einstellung öffen:
+  Ctrl Cmd E
+
+- Auskommentieren in vs code:
+  Ctrl Shift A(multiple line) / 7(single line)
+- Rückgängig in vs code:
+  Ctrl Z/Y
+- \: 
+  Opt ß
+- |: 
+  Opt <
+- Brackets: 
+  Opt 7/8
+- Tilda: 
+  Opt +
+- @:
+  Opt Q
+- Pfeil:
+  Opt Z/U/I
+- 书名号:
+  Opt Y/X
+- Deutsche Anführungszeichen:
+  Opt V/B
+
+
+
 - shortcuts_mac_________________________________
 
 - Widerrufen und wiederholen:
@@ -66,3 +121,7 @@
 - creates an inputfield with the type set to text
   input:text
 - shift plus mouseclick: select page content 
+- wechseln zwischen Tabs in vs code: 
+  Opt + Number
+- open keyboard shortcuts:
+  Ctrl K S

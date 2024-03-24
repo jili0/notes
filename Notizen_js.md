@@ -232,3 +232,10 @@
 - optional parameters
 - type assertions/casting
 - none-known-assertion: !
+- Math.abs() is a built-in JavaScript method that will return the absolute value of a number.
+-  the Array object has a .from() method that accepts an array-like and returns an array. 
+-  for in loop iterates over each key
+-  "for <key> in" and "for <value> of"
+-  Optional chaining (?.) helps prevent errors when accessing nested properties that might be null or undefined. 
+-  the sort() method is expecting a number to be returned. If you return a negative number, the first item is sorted before the second item.
+-  

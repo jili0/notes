@@ -97,5 +97,9 @@
 
 - You can wrap input and its label in an p element to make them appear on one seperate line
 - Don't send sensitive information using get request, since everything that you send shows in the urls
-
+- insertAdjacentHTML('beforeend', HTMLString)
+- for of loop:
+  for (const element of elementArray) {
+    console.log(element);
+  }
 
