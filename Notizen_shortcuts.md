@@ -32,14 +32,7 @@
 - Vollbildmodus:
   Ctrl Cmd <
 
-- Auskommentieren in vs code:
-  Ctrl Shift A(multiple line) / 7(single line)
-- Rückgängig in vs code:
-  Ctrl Z/Y
-- Hide Filetree:
-  Ctrl B
-- wrap the code:
-  Cmd Z
+
 - \: 
   Opt ß
 - |: 
@@ -120,15 +113,21 @@
 - create new file:
   Cmd N
 - comment sth out:
-  Shift Opt A
+  Shift Opt A 
+  (ubuntu: Shift Ctrl A )
 - 5 paragraphs with 20 words:
   p*5>lorem20
 - div.square*12 ››› Tab
 - wrap the code:
-  Opt Z
+  Opt Z (Ctrl Z auf ubuntu)
+- toggle sidebar:
+  Ctrl B
 - cmd shift p: 
   open emmet
 - cmd shift L : select all occurences
+- copy line down:
+  Shift Opt down
+  (ubuntu: Shift Cmd down)
 
 - creates an inputfield with the type set to text
   input:text
