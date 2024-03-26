@@ -128,6 +128,10 @@
 - copy line down:
   Shift Opt down
   (ubuntu: Shift Cmd down)
+- open/close Terminal
+  (ubuntu: Cmd T/X)
+- clear Terminal
+  Ctrl L
 
 - creates an inputfield with the type set to text
   input:text
