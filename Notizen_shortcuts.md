@@ -29,11 +29,17 @@
   Ctrl Cmd F
 - Einstellung öffen:
   Ctrl Cmd E
+- Vollbildmodus:
+  Ctrl Cmd <
 
 - Auskommentieren in vs code:
   Ctrl Shift A(multiple line) / 7(single line)
 - Rückgängig in vs code:
   Ctrl Z/Y
+- Hide Filetree:
+  Ctrl B
+- wrap the code:
+  Cmd Z
 - \: 
   Opt ß
 - |: 
@@ -50,6 +56,12 @@
   Opt Y/X
 - Deutsche Anführungszeichen:
   Opt V/B
+
+- Google Meet Mic on/off:
+  Ctrl D
+- Google Meet Hand up/down:
+  Space
+- 
 
 
 

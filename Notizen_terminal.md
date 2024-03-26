@@ -59,4 +59,5 @@ Notizen_terminal
 - sudo apt install opera
 - The word "apt" refers to software package management for Debian-based systems and stands for "advanced package tool"
 - mac: sudo softwareupdate -i [app name] 
-- 
+- ifconfig: ip adresse anzeigen
+- cal: calender öffnen
