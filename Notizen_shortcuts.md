@@ -15,6 +15,12 @@
   Ctrl Cmd +
 - Fenster minimieren:
   Ctrl Cmd -
+- Vergrößen:
+  Cmd +
+- Verkleinern:
+  Cmd -
+- Lupe ein/aus:
+  Ctrl Cmd L
 - Fenster Horizontal/Vertikal maximieren:
   Ctrl Cmd H/V
 - Fenster verschieben:
@@ -31,6 +37,7 @@
   Ctrl Cmd E
 - Vollbildmodus:
   Ctrl Cmd <
+
 
 
 - \: 
