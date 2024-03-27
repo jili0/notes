@@ -37,6 +37,8 @@
   Ctrl Cmd E
 - Vollbildmodus:
   Ctrl Cmd <
+- Show current path in Dateien:
+  Ctrl L
 
 
 
