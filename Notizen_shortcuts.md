@@ -119,6 +119,10 @@
 
 - shortcuts_vscode__________________________________
 
+- GitHub Copilot: 
+- Tab (accept all suggestion); 
+- Ctrl rechts (accept a part of suggestion)
+- Ctrl Enter (open multiple suggestions)
 - create new file:
   Cmd N
 - comment sth out:
