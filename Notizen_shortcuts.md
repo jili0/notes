@@ -119,10 +119,12 @@
 
 - shortcuts_vscode__________________________________
 
-- GitHub Copilot: 
-- Tab (accept all suggestion); 
-- Ctrl rechts (accept a part of suggestion)
-- Ctrl Enter (open multiple suggestions)
+- Add Selection to next find Match: 
+  Ctrl D
+- GitHub Copilot:  
+  Tab (accept all suggestion); 
+  Ctrl rechts (accept a part of suggestion)
+  Ctrl Enter (open multiple suggestions)
 - create new file:
   Cmd N
 - comment sth out:
@@ -145,6 +147,8 @@
   (ubuntu: Cmd T/X)
 - clear Terminal
   Ctrl L
+- open color picker
+  Cmd C
 
 - creates an inputfield with the type set to text
   input:text
