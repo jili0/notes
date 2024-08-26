@@ -110,3 +110,5 @@ Notizen_css
     }
   }
 - The caret-color property specifies the color of the cursor (caret) in inputs, textareas, or any element that is editable.
+- parallax scrolling
+- background-origin: content-box/ border-box/ padding-box;

@@ -15,6 +15,12 @@
   Ctrl Cmd +
 - Fenster minimieren:
   Ctrl Cmd -
+- Vergrößen:
+  Cmd +
+- Verkleinern:
+  Cmd -
+- Lupe ein/aus:
+  Ctrl Cmd L
 - Fenster Horizontal/Vertikal maximieren:
   Ctrl Cmd H/V
 - Fenster verschieben:
@@ -31,6 +37,9 @@
   Ctrl Cmd E
 - Vollbildmodus:
   Ctrl Cmd <
+- Show current path in Dateien:
+  Ctrl L
+
 
 
 - \: 
@@ -110,6 +119,12 @@
 
 - shortcuts_vscode__________________________________
 
+- Add Selection to next find Match: 
+  Ctrl D
+- GitHub Copilot:  
+  Tab (accept all suggestion); 
+  Ctrl rechts (accept a part of suggestion)
+  Ctrl Enter (open multiple suggestions)
 - create new file:
   Cmd N
 - comment sth out:
@@ -132,6 +147,8 @@
   (ubuntu: Cmd T/X)
 - clear Terminal
   Ctrl L
+- open color picker
+  Cmd C
 
 - creates an inputfield with the type set to text
   input:text
