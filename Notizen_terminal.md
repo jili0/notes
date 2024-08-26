@@ -61,3 +61,6 @@ Notizen_terminal
 - mac: sudo softwareupdate -i [app name] 
 - ifconfig: ip adresse anzeigen
 - cal: calender öffnen
+- remove middle button of magic mouse: 
+  sudo rmmod hid_magicmouse
+  sudo modprobe hid_magicmouse emulate_3button=0

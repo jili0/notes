@@ -1,0 +1,19 @@
+{
+  "name": "notes",
+  "version": "1.0.0",
+  "description": "An Application to manage programming notes",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jili0/notes.git"
+  },
+  "author": "jingli0319@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jili0/notes/issues"
+  },
+  "homepage": "https://github.com/jili0/notes#readme",
+  "dependencies": {
+    "mongodb": "^3.7.4"
+  }
+}

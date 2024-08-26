@@ -17,11 +17,9 @@ const deleteNotiz = () => {
 };
 
 const displayNotiz = (notiz) => {
-  let neuNotiz = notiz.replaceAll("  ", "🐾");
-  neuNotiz = splitStringToArray(neuNotiz).slice(1);
+  let neuNotiz = splitStringToArray(notiz).slice(1);
 
   for (let i = 0; i < neuNotiz.length; i++) {
-    neuNotiz[i] = neuNotiz[i].replace(/^/, "🐾");
     /* innercontainer */
     const innerContainer = document.createElement("div");
     innerContainer.className = "innerContainer";
@@ -48,33 +46,17 @@ const displayNotiz = (notiz) => {
     let index;
     let array = [];
 
-    const handleNotiz = (notiz, indexSearchFrom) => {
-      index = notiz.indexOf("🐾", indexSearchFrom);
-      if (index == -1) {
-        array.push(notiz);
-      } else {
-        const notiz1 = notiz.slice(0, index);
-        const notiz2 = notiz.slice(index);
-        /* the length of "🐾" is 2! */
-        if (notiz1.length > 4) {
-          array.push(notiz1);
-          handleNotiz(notiz2, indexSearchFrom);
-        } else {
-          index = index + 1;
-          handleNotiz(notiz, index);
-        }
-      }
+    array.push(notiz);
 
-      return array.length >= 0 ? array : [notiz];
-    };
-
-    handleNotiz(neuNotiz[i], 0).forEach((line) => {
-      const einzelnLine = document.createElement("p");
-      einzelnLine.className = "einzelnLine";
-      einzelnLine.textContent = line;
-      einzelnNotiz.appendChild(einzelnLine);
-    });
+    return array.length >= 0 ? array : [notiz];
   }
+
+  handleNotiz(neuNotiz[i], 0).forEach((line) => {
+    const einzelnLine = document.createElement("pre");
+    einzelnLine.className = "einzelnLine";
+    einzelnLine.textContent = line;
+    einzelnNotiz.appendChild(einzelnLine);
+  });
 };
 
 if (notizZettelName == "HTML") {
